@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Suggestions</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #0f0f1f, #1a1a2e);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #00ffff;
+            text-shadow: 0 0 5px #0ff;
+        }
+
+        .suggestions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .song-card {
+            background: #202032;
+            border-radius: 16px;
+            overflow: hidden;
+            padding: 12px;
+            box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .song-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .song-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .song-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 12px 0 4px;
+            color: #00e6ff;
+        }
+
+        .song-artist {
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        .back-link {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #0ff;
+            font-weight: bold;
+            border: 2px solid #0ff;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .back-link:hover {
+            background-color: #0ff;
+            color: #000;
+        }
+        </style>
+</head>
+<body>
+    <h2>🎶 Music Suggestions for You</h2>
+
+    <div class="suggestions-grid">
+        <a href="https://open.spotify.com/track/2cGxRwrMyEAp8dEbuZaVv6" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174254.png') }}" alt="Instant Crush">
+            <div class="song-title">Instant Crush</div>
+            <div class="song-artist">Daft Punk</div>
+        </a>
+
+        <a href="https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174329.png') }}" alt="Yellow">
+            <div class="song-title">Yellow</div>
+            <div class="song-artist">Coldplay</div>
+        </a>
+
+        <a href="https://open.spotify.com/track/4iJyoBOLtHqaGxP12qzhQI" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174357.png') }}" alt="Peaches">
+            <div class="song-title">Peaches</div>
+            <div class="song-artist">Justin Bieber</div>
+        </a>
+
+        <a href="https://open.spotify.com/track/5HCyWlXZPP0y6Gqq8TgA20" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174417.png') }}" alt="Attention">
+            <div class="song-title">Attention</div>
+            <div class="song-artist">Charlie Puth</div>
+        </a>
+
+        <a href="https://open.spotify.com/track/56zZ48jdyY2oDXHVnwg5Di" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174440.png') }}" alt="Tum Hi Ho">
+            <div class="song-title">Tum Hi Ho</div>
+            <div class="song-artist">Arijit Singh</div>
+        </a>
+
+        <a href="https://open.spotify.com/album/6H71erprmvRxnWs3XqC8uE" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174505.png') }}" alt="Kal Ho Naa Ho">
+            <div class="song-title">Kal Ho Naa Ho</div>
+            <div class="song-artist">Sonu Nigam</div>
+        </a>
+
+        <a href="https://open.spotify.com/album/1HeX4SmCFW4EPHQDvHgrVS" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174523.png') }}" alt="Kesariya">
+            <div class="song-title">Kesariya</div>
+            <div class="song-artist">Arijit Singh</div>
+        </a>
+
+        <a href="https://open.spotify.com/track/7mVOFLVSE3dMGkhKTSDIGl" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174543.png') }}" alt="Apna Bana Le">
+            <div class="song-title">Apna Bana Le</div>
+            <div class="song-artist">Arijit Singh</div>
+        </a>
+
+        <a href="https://open.spotify.com/album/3Q6oDVihOpQVi2FC0Mfjlm" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174609.png') }}" alt="Shayad">
+            <div class="song-title">Shayad</div>
+            <div class="song-artist">Arijit Singh</div>
+        </a>
+
+        <a href="https://open.spotify.com/track/2LcXJP95e4HKydTZ2mYfrx" target="_blank" class="song-card">
+            <img src="{{ url_for('static', filename='images/Screenshot 2025-04-09 174644.png') }}" alt="Tujh Mein Rab Dikhta Hai">
+            <div class="song-title">Tujh Mein Rab Dikhta Hai</div>
+            <div class="song-artist">Roop Kumar Rathod</div>
+        </a>
+    </div>
+
+    <a class="back-link" href="/">⬅ Back to Chat</a>
+</body>
+</html>

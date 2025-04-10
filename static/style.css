@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1db954, #191414);
+    color: white;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #1db954;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #results {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
